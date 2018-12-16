@@ -1,0 +1,14 @@
+<Root>
+    <ListView Data="/">
+        <View>
+            <View>{{id}} {{customer}} {{dueDate}}</View>
+            <Table Data="/items">
+                <Column Name="ID" Value="id"/>
+                <Column Name="Name" Value="name"/>
+                <Column Name="Price" Value="price"/>
+                <Column Name="Quantity" Value="quantity"/>
+                <Column Name="Total" Value="total"/>
+            </Table>
+        </View>
+    </ListView>
+</Root>

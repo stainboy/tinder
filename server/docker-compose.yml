@@ -1,0 +1,8 @@
+version: '3'
+services:
+  webclient:
+    image: nginx:alpine
+    ports:
+    - 8000:80
+    volumes:
+    - ./wwwroot:/usr/share/nginx/html:ro

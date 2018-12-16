@@ -4,6 +4,7 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
+import WebClientScreen from '../screens/WebClientScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 
@@ -24,6 +25,26 @@ HomeStack.navigationOptions = {
     />
   ),
 };
+
+
+const WebClientStack = createStackNavigator({
+  Home: WebClientScreen,
+});
+
+WebClientStack.navigationOptions = {
+  tabBarLabel: 'WebClient',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon
+      focused={focused}
+      name={
+        Platform.OS === 'ios'
+          ? `ios-bug`
+          : 'bug'
+      }
+    />
+  ),
+};
+
 
 const LinksStack = createStackNavigator({
   Links: LinksScreen,
@@ -55,6 +76,7 @@ SettingsStack.navigationOptions = {
 
 export default createBottomTabNavigator({
   HomeStack,
+  WebClientStack,
   LinksStack,
   SettingsStack,
 });

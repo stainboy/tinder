@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "id": "S001",
+      "customer": "SAP Labs China",
+      "dueDate": "2018-12-25",
+      "items": [
+        {
+          "id": "I001",
+          "name": "iPhone X",
+          "price": "¥8000",
+          "quantity": 1,
+          "total": "¥8000"
+        },
+        {
+          "id": "I002",
+          "name": "Mi Band 3",
+          "price": "¥100",
+          "quantity": 2,
+          "total": "¥200"
+        }
+      ]
+    },
+    {
+      "id": "S002",
+      "customer": "Google Inc.",
+      "dueDate": "2018-11-10",
+      "items": [
+        {
+          "id": "I001",
+          "name": "iPhone X",
+          "price": "¥8000",
+          "quantity": 2,
+          "total": "¥16000"
+        }
+      ]
+    },
+    {
+      "id": "S003",
+      "customer": "Twitter Inc.",
+      "dueDate": "2018-12-20",
+      "items": [
+        {
+          "id": "I002",
+          "name": "20000mAh Mi Power Bank",
+          "price": "¥90",
+          "quantity": 1,
+          "total": "¥90"
+        }
+      ]
+    }
+  ]
+}
