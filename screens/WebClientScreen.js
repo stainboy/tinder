@@ -89,10 +89,10 @@ export default class WebClientScreen extends React.Component {
     });
 
     Promise.all([
-      fetch("http://192.168.31.126:8000/sales_order_listview.xml")
+      fetch("https://raw.githubusercontent.com/stainboy/tinder/master/server/wwwroot/sales_order_listview.xml")
         .then(res => res.text())
         .then(res => this.promiseParseString(res)),
-      fetch("http://192.168.31.126:8000/sales_order_list.json").then(res =>
+      fetch("https://raw.githubusercontent.com/stainboy/tinder/master/server/wwwroot/sales_order_list.json").then(res =>
         res.json()
       ),
       new Promise(resolve => setTimeout(resolve, 500))

@@ -39,7 +39,7 @@ WebClientStack.navigationOptions = {
       name={
         Platform.OS === 'ios'
           ? `ios-bug`
-          : 'bug'
+          : 'md-bug'
       }
     />
   ),

@@ -23,8 +23,13 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sap.webclient"
     },
-    "description": ""
+    "android": {
+      "package": "com.sap.webclient"
+    },
+    "description": "",
+    "githubUrl": "https://github.com/stainboy/tinder"
   }
 }
